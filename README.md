@@ -35,21 +35,7 @@ Deve ser totalmente criada e _deployada_ manualmente. Entretanto, ao invés de r
 
     Utilizar o comando [`gcloud functions deploy`](https://cloud.google.com/sdk/gcloud/reference/functions/deploy).
 
-    ```bash
-    # O nome do recurso (no GCP) associado à função
-    FN_NAME=my-first-function
-
-    # Identificador da função no código-fonte
-    FN_ENTRY_POINT=myFirstFn
-
-    gcloud functions deploy $FN_NAME \
-        --entry-point=$FN_ENTRY \
-        --runtime=nodejs16 \
-        --source=. \
-        --region=us-central1 \
-        --trigger-http \
-        --allow-unauthenticated
-    ```
+    Execute `./deploy.sh`.
 
     Note a flag _source_, que indica que o diretório atual irá conter o código-fonte da função. Este é o valor padrão, mas preferi deixar explícito. Aliás, existe, neste diretório, o arquivo `.gcloudignore` para evitar que arquivos irrelevantes sejam enviados.
 
