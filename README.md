@@ -1,13 +1,5 @@
 # Manually deploy a Cloud Function
 
-Primeiro desafio.
-
-## Observações
-
-Atualmente eu não tenho as permissões necessárias para criar Cloud Functions no projeto FIDES (ou qualquer outro dentro da organização da TM no GCP).
-
-Como eu não estou de fato certo sobre onde devo fazer o _deploy_ desta Cloud Function, ao invés de abrir uma PR para dar um _role_ como `roles/cloudfunctions.developer` ao meu usuário no GCP, optei por apenas escrever este documento e amanhã (7 de abril) perguntar onde, de fato, devo subir a função que aqui desenvolveremos.
-
 ## Passo a passo
 
 De acordo com [este documento](https://cloud.google.com/functions/docs/writing#types_of_cloud_functions), existem dois tipos principais de _trigger_ para Cloud Functions:
